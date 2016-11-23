@@ -54,4 +54,15 @@
         android:summary="@string/power_button_torch_summary"
         android:defaultValue="false" />
     </PreferenceCategory>
+
+    <PreferenceCategory
+    android:title="@string/volume_button">
+
+    <!-- Long press volume to skip tracks -->
+    <com.genesis.support.preferences.SystemSettingSwitchPreference
+        android:key="volbtn_music_controls"
+        android:title="@string/volume_button_music_control_title"
+        android:summary="@string/volume_button_music_control_summary"
+        android:defaultValue="false" />
+    </PreferenceCategory>
 </PreferenceScreen>
