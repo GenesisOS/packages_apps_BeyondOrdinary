@@ -22,6 +22,13 @@
     <PreferenceCategory
     android:title="@string/general">
 
+    <!-- Pocket mode -->
+    <com.genesis.support.preferences.SystemSettingSwitchPreference
+        android:key="pocket_judge"
+        android:title="@string/proximity_wake_title"
+        android:summary="@string/proximity_wake_summary"
+        android:defaultValue="false" />
+
     <!-- Enable AOD on charging only -->
     <com.genesis.support.preferences.SecureSettingSwitchPreference
         android:key="doze_on_charge"

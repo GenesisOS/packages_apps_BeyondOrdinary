@@ -49,8 +49,10 @@ public class Lockscreen extends SettingsPreferenceFragment
             implements Preference.OnPreferenceChangeListener {
 
     private static final String AOD_SCHEDULE_KEY = "always_on_display_schedule";
+    private static final String POCKET_JUDGE = "pocket_judge";
 
     private Preference mAODPref;
+    private Preference mPocketJudge;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -62,6 +64,13 @@ public class Lockscreen extends SettingsPreferenceFragment
 
         mAODPref = findPreference(AOD_SCHEDULE_KEY);
         updateAlwaysOnSummary();
+
+        mPocketJudge = findPreference(POCKET_JUDGE);
+        boolean mPocketJudgeSupported = res.getBoolean(
+                com.android.internal.R.bool.config_pocketModeSupported);
+        if (!mPocketJudgeSupported) {
+            prefScreen.removePreference(mPocketJudge);
+        }
     }
 
     @Override
@@ -103,6 +112,13 @@ public class Lockscreen extends SettingsPreferenceFragment
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.GENESIS;
     }
+
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+        Settings.System.putIntForUser(resolver,
+                Settings.System.POCKET_JUDGE, 0, UserHandle.USER_CURRENT);
+    }
+
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider() {
                 @Override
@@ -115,7 +131,15 @@ public class Lockscreen extends SettingsPreferenceFragment
 
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
-                    final List<String> keys = super.getNonIndexableKeys(context);
+                    List<String> keys = super.getNonIndexableKeys(context);
+                    final Resources res = context.getResources();
+
+                    boolean mPocketJudgeSupported = res.getBoolean(
+                            com.android.internal.R.bool.config_pocketModeSupported);
+                    if (!mPocketJudgeSupported) {
+                        keys.add(POCKET_JUDGE);
+                    }
+
                     return keys;
                 }
             };
