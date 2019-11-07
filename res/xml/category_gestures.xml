@@ -33,6 +33,13 @@
     <PreferenceCategory
     android:title="@string/power_button">
 
+    <!-- Advanced reboot -->
+    <com.genesis.support.preferences.SystemSettingSwitchPreference
+        android:key="advanced_reboot"
+        android:title="@string/global_actions_advanced_reboot_title"
+        android:summary="@string/global_actions_advanced_reboot_summary"
+        android:defaultValue="false" />
+
     <!-- Long press power button to toggle torch -->
     <com.genesis.support.preferences.SystemSettingSwitchPreference
         android:key="torch_power_button_gesture"

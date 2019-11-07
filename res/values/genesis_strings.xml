@@ -28,6 +28,10 @@
     <string name="doze_on_charge_title">Always on when charging</string>
     <string name="doze_on_charge_summary">Always show time and info only when the device is plugged in</string>
 
+    <!-- Global Actions -->
+    <string name="global_actions_advanced_reboot_title">Advanced restart</string>
+    <string name="global_actions_advanced_reboot_summary">Show options for recovery and bootloader in power menu</string>
+
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">In-call vibration</string>
     <string name="incall_vibrate_connect_title">Vibrate on connect</string>
