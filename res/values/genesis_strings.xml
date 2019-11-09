@@ -89,6 +89,10 @@
     <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
     <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
 
+    <!-- Less boring heads up -->
+    <string name="less_boring_heads_up_title">Less boring</string>
+    <string name="less_boring_heads_up_summary">Display popup notifications only for alarm, dialer and messaging app</string>
+
     <!-- Network traffic -->
     <string name="network_traffic_state_title">Network traffic indicator</string>
     <string name="network_traffic_state_summary">Enable or disable network speed indicator in status bar</string>
