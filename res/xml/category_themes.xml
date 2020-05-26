@@ -18,4 +18,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/category_themes_title" >
+
+    <PreferenceCategory
+    android:title="@string/general">
+
+    <!-- Black theme for dark mode -->
+    <com.genesis.support.preferences.SecureSettingSwitchPreference
+        android:key="berry_black_theme"
+        android:title="@string/berry_black_theme_title"
+        android:summary="@string/berry_black_theme_summary"
+        android:defaultValue="false" />
+    </PreferenceCategory>
 </PreferenceScreen>
