@@ -30,4 +30,16 @@
         android:fragment="com.beyond.ordinary.fragments.NetworkTrafficSettings"
         android:defaultValue="false" />
     </PreferenceCategory>
+
+    <PreferenceCategory
+    android:title="@string/icons">
+
+    <!-- Status bar Icon Manager -->
+    <Preference
+        android:key="icon_manager"
+        android:title="@string/icon_manager_title"
+        android:summary="@string/icon_manager_summary">
+        <intent android:action="com.android.settings.action.STATUS_BAR_TUNER" />
+    </Preference>
+    </PreferenceCategory>
 </PreferenceScreen>
