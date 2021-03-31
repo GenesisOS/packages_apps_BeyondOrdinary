@@ -48,6 +48,10 @@ import java.util.List;
 public class Lockscreen extends SettingsPreferenceFragment
             implements Preference.OnPreferenceChangeListener {
 
+    private static final String AOD_SCHEDULE_KEY = "always_on_display_schedule";
+
+    private Preference mAODPref;
+
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
@@ -55,6 +59,39 @@ public class Lockscreen extends SettingsPreferenceFragment
         PreferenceScreen prefSet = getPreferenceScreen();
         final Resources res = getResources();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        mAODPref = findPreference(AOD_SCHEDULE_KEY);
+        updateAlwaysOnSummary();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        updateAlwaysOnSummary();
+    }
+
+    private void updateAlwaysOnSummary() {
+        if (mAODPref == null) return;
+        int mode = Settings.Secure.getIntForUser(getActivity().getContentResolver(),
+                Settings.Secure.DOZE_ALWAYS_ON_AUTO_MODE, 0, UserHandle.USER_CURRENT);
+        switch (mode) {
+            default:
+            case 0:
+                mAODPref.setSummary(R.string.disabled);
+                break;
+            case 1:
+                mAODPref.setSummary(R.string.night_display_auto_mode_twilight);
+                break;
+            case 2:
+                mAODPref.setSummary(R.string.night_display_auto_mode_custom);
+                break;
+            case 3:
+                mAODPref.setSummary(R.string.always_on_display_schedule_mixed_sunset);
+                break;
+            case 4:
+                mAODPref.setSummary(R.string.always_on_display_schedule_mixed_sunrise);
+                break;
+        }
     }
 
     @Override
