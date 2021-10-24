@@ -138,6 +138,10 @@
     <string name="search">Search</string>
     <string name="search_apps">Search apps</string>
 
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">Show 4G icon</string>
+    <string name="show_fourg_icon_summary">Display 4G icon in signal icon instead LTE</string>
+
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_title">Battery indicator</string>
     <string name="status_bar_battery_style_title">Battery status style</string>
