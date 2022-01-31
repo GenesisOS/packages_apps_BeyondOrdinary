@@ -26,6 +26,7 @@
     <string name="reset_message">Reset all entries to default?</string>
     <string name="attention">Attention</string>
     <string name="reset">Reset</string>
+    <string name="spoofing">Spoofing</string>
     <string name="udfps">Udfps</string>
 
     <!-- BeyondOrdinary -->

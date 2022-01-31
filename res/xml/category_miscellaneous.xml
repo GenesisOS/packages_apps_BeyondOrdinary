@@ -18,4 +18,22 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/category_miscellaneous_title" >
+
+    <PreferenceCategory
+    android:title="@string/spoofing">
+
+        <!-- Unlock FPS for specific games -->
+        <com.genesis.support.preferences.SystemPropertySwitchPreference
+            android:key="persist.sys.gameprops.enabled"
+            android:title="@string/use_games_spoof_title"
+            android:summary="@string/use_games_spoof_summary"
+            android:defaultValue="false" />
+
+        <!-- Unlimited google photos storage -->
+        <com.genesis.support.preferences.SystemPropertySwitchPreference
+            android:key="persist.sys.pihooks.gphotos"
+            android:title="@string/use_photos_spoof_title"
+            android:summary="@string/use_photos_spoof_summary"
+            android:defaultValue="true" />
+    </PreferenceCategory>
 </PreferenceScreen>
