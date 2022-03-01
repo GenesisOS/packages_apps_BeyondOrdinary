@@ -59,6 +59,10 @@
     <string name="doze_on_charge_title">Always on when charging</string>
     <string name="doze_on_charge_summary">Always show time and info only when the device is plugged in</string>
 
+    <!-- Disable QS on secure lock screen -->
+    <string name="disable_qs_title">Quick settings</string>
+    <string name="disable_qs_summary">Prevent access to QS tiles on secure lock screen</string>
+
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Full screen apps</string>
     <string name="display_cutout_force_fullscreen_summary">Force apps to ignore notch space</string>

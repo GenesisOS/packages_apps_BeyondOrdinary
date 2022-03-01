@@ -43,6 +43,17 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+    android:title="@string/secure_locksreen">
+
+    <!-- Disable QS on secure lock screen -->
+    <com.genesis.support.preferences.SystemSettingSwitchPreference
+        android:key="secure_lockscreen_qs_disabled"
+        android:title="@string/disable_qs_title"
+        android:summary="@string/disable_qs_summary"
+        android:defaultValue="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
     android:title="@string/udfps">
 
         <!-- Screen-Off UDFPS -->
