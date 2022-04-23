@@ -69,6 +69,13 @@
             android:title="@string/use_photos_spoof_title"
             android:summary="@string/use_photos_spoof_summary"
             android:defaultValue="true" />
+
+        <!-- Ignore window secure flags -->
+        <com.genesis.support.preferences.GlobalSettingSwitchPreference
+            android:key="window_ignore_secure"
+            android:title="@string/ignore_window_secure_title"
+            android:summary="@string/ignore_window_secure_summary"
+            android:defaultValue="false"/>
     </PreferenceCategory>
 
     <!-- Incall vibration options -->
