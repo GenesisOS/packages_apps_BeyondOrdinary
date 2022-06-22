@@ -18,4 +18,16 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/category_lockscreen_title" >
+
+    <PreferenceCategory
+    android:title="@string/udfps">
+
+        <!-- Screen-Off UDFPS -->
+        <Preference
+            android:key="gesture_screen_off_udfps_input_summary"
+            android:title="@string/ambient_display_screen_off_udfps_title"
+            android:fragment="com.beyond.ordinary.fragments.ScreenOffUdfpsSettings"
+            settings:searchable="false"
+            settings:controller="com.beyond.ordinary.fragments.ScreenOffUdfpsPreferenceController" />
+    </PreferenceCategory>
 </PreferenceScreen>
