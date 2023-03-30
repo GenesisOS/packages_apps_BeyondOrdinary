@@ -20,6 +20,16 @@
     android:title="@string/category_lockscreen_title" >
 
     <PreferenceCategory
+    android:title="@string/general">
+
+    <!-- Enable AOD on charging only -->
+    <com.genesis.support.preferences.SecureSettingSwitchPreference
+        android:key="doze_on_charge"
+        android:title="@string/doze_on_charge_title"
+        android:summary="@string/doze_on_charge_summary" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
     android:title="@string/udfps">
 
         <!-- Screen-Off UDFPS -->
