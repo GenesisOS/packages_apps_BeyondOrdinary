@@ -18,4 +18,16 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/category_statusbar_title" >
+
+    <PreferenceCategory
+    android:title="@string/general">
+
+    <!-- Network traffic -->
+    <Preference
+        android:key="network_traffic_state"
+        android:title="@string/network_traffic_state_title"
+        android:summary="@string/network_traffic_state_summary"
+        android:fragment="com.beyond.ordinary.fragments.NetworkTrafficSettings"
+        android:defaultValue="false" />
+    </PreferenceCategory>
 </PreferenceScreen>
