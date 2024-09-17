@@ -32,6 +32,31 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="status_bar_battery_key"
+        android:title="@string/status_bar_battery_title">
+
+    <!-- Status bar - Battery -->
+    <com.genesis.support.preferences.SystemSettingListPreference
+        android:key="status_bar_battery_style"
+        android:title="@string/status_bar_battery_style_title"
+        android:summary="%s"
+        android:dialogTitle="@string/status_bar_battery_style_title"
+        android:entries="@array/status_bar_battery_style_entries"
+        android:entryValues="@array/status_bar_battery_style_values"
+        android:defaultValue="0" />
+
+    <!-- Status bar - Battery percentage -->
+    <com.genesis.support.preferences.SystemSettingListPreference
+        android:key="status_bar_battery_percent"
+        android:title="@string/status_bar_battery_percentage_title"
+        android:summary="%s"
+        android:dialogTitle="@string/status_bar_battery_percentage_title"
+        android:entries="@array/status_bar_battery_percentage_entries"
+        android:entryValues="@array/status_bar_battery_percentage_values"
+        android:defaultValue="0" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
     android:title="@string/icons">
 
     <!-- Status bar Icon Manager -->
