@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (C) 2023 GenesisOS
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/beyond_dashboard_title" >
+
+    <!-- Themes -->
+     <Preference
+          android:icon="@drawable/ic_category_themes"
+          android:id="@+id/themes"
+          android:title="@string/category_themes_title"
+          android:fragment="com.beyond.ordinary.category.Themes"
+          />
+
+    <!-- StatusBar -->
+     <Preference
+          android:icon="@drawable/ic_category_statusbar"
+          android:id="@+id/statusbar"
+          android:title="@string/category_statusbar_title"
+          android:fragment="com.beyond.ordinary.category.StatusBar"
+          />
+
+    <!-- Quick Settings -->
+     <Preference
+          android:icon="@drawable/ic_category_quicksettings"
+          android:id="@+id/quick_settings"
+          android:title="@string/category_quicksettings_title"
+          android:fragment="com.beyond.ordinary.category.QuickSettings"
+          />
+
+    <!-- Lockscreen -->
+     <Preference
+          android:icon="@drawable/ic_category_lockscreen"
+          android:id="@+id/lockscreen"
+          android:title="@string/category_lockscreen_title"
+          android:fragment="com.beyond.ordinary.category.Lockscreen"
+          />
+
+    <!-- Notifications -->
+     <Preference
+          android:icon="@drawable/ic_category_notifications"
+          android:id="@+id/notifications"
+          android:title="@string/category_notifications_title"
+          android:fragment="com.beyond.ordinary.category.Notifications"
+          />
+
+    <!-- Gestures -->
+     <Preference
+          android:icon="@drawable/ic_category_gestures"
+          android:id="@+id/gestures"
+          android:title="@string/category_gestures_title"
+          android:fragment="com.beyond.ordinary.category.Gestures"
+          />
+
+    <!-- Miscellaneous -->
+     <Preference
+          android:icon="@drawable/ic_category_miscellaneous"
+          android:id="@+id/miscellaneous"
+          android:title="@string/category_miscellaneous_title"
+          android:fragment="com.beyond.ordinary.category.Miscellaneous"
+          />
+</PreferenceScreen>
