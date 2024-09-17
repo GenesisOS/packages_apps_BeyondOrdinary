@@ -29,4 +29,15 @@
         android:summary="@string/three_finger_gesture_summary"
         android:defaultValue="false" />
     </PreferenceCategory>
+
+    <PreferenceCategory
+    android:title="@string/power_button">
+
+    <!-- Long press power button to toggle torch -->
+    <com.genesis.support.preferences.SystemSettingSwitchPreference
+        android:key="torch_power_button_gesture"
+        android:title="@string/power_button_torch_title"
+        android:summary="@string/power_button_torch_summary"
+        android:defaultValue="false" />
+    </PreferenceCategory>
 </PreferenceScreen>
