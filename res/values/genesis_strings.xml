@@ -59,6 +59,10 @@
     <string name="doze_on_charge_title">Always on when charging</string>
     <string name="doze_on_charge_summary">Always show time and info only when the device is plugged in</string>
 
+    <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Full screen apps</string>
+    <string name="display_cutout_force_fullscreen_summary">Force apps to ignore notch space</string>
+
     <!-- Game Space -->
     <string name="game_space_title">Game Space</string>
     <string name="game_space_summary">Enhance your gaming experience</string>
@@ -70,8 +74,6 @@
     <!-- Hide developer status -->
     <string name="hide_developer_status_title">Hide developer status</string>
     <string name="hide_developer_status_summary">Hide developer status from apps</string>
-    <string name="search">Search</string>
-    <string name="search_apps">Search apps</string>
 
     <!-- Status bar Icon Manager -->
     <string name="icon_manager_title">Icon manager</string>
@@ -119,6 +121,10 @@
     <!-- Screenshot shutter sound  -->
     <string name="screenshot_shutter_sound_title">Screenshot sound</string>
     <string name="screenshot_shutter_sound_summary">Play sound when screenshot is taken</string>
+
+    <!-- App search preference -->
+    <string name="search">Search</string>
+    <string name="search_apps">Search apps</string>
 
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Tap to sleep</string>
