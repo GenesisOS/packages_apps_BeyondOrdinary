@@ -66,16 +66,4 @@
         android:summary="@string/lockscreen_enable_power_menu_summary"
         android:defaultValue="true" />
     </PreferenceCategory>
-
-    <PreferenceCategory
-    android:title="@string/udfps">
-
-        <!-- Screen-Off UDFPS -->
-        <Preference
-            android:key="gesture_screen_off_udfps_input_summary"
-            android:title="@string/ambient_display_screen_off_udfps_title"
-            android:fragment="com.beyond.ordinary.fragments.ScreenOffUdfpsSettings"
-            settings:searchable="false"
-            settings:controller="com.beyond.ordinary.fragments.ScreenOffUdfpsPreferenceController" />
-    </PreferenceCategory>
 </PreferenceScreen>
